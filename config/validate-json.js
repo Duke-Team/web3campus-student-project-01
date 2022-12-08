@@ -21,6 +21,8 @@
       if (!isCorrectValue) {
         throw Error("Value does not start with 0x");
       }
+    } else {
+      throw new Error("File is not exists");
     }
   } catch (error) {
     core.setFailed(error.message);
